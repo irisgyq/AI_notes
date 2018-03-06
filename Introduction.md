@@ -1,6 +1,8 @@
 ## Introduction
+---
 
 ### AI：Think rationally、Act rationally
+---
 
 -  Rational: maximally achieving pre-defined goals
 
@@ -12,6 +14,7 @@
 
 
 ### Designing Rational Agents
+---
 
 - An agent is an entity that percives and acts
 

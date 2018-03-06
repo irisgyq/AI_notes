@@ -1,6 +1,8 @@
-## Uninformed Search
+## Uninformed Search —— No idea of where is the goal, just explore and explore
+---
 
 ### Agents that Plan
+---
 
 Reflex agents:
 
@@ -13,6 +15,7 @@ Desions based on consequences of actions, must formulate a goal, consider how th
 而且还要考虑 optimal vs. complete planning, planning vs. replanning
 
 ### Search Problems
+---
 
 A search problem consists of:
 
@@ -83,6 +86,7 @@ E.g.
 120 * 2^30
 
 ### State space graph and tree
+---
 
 graph: each node appears only once.
 
@@ -91,6 +95,7 @@ trees: start state is root node, children correspond to successors, same state w
 **Lots of repeated structures in the search tree!**
 
 ### Depth-First Search
+---
 
 Stratefy: expand a deepest node first.
 
@@ -105,6 +110,7 @@ Implementation: Fringe is a LIFO stack
 - space complexity: O(bm)
 
 ### Breadth-First search
+---
 
 Strategy: expand a shallowest node first
 
@@ -119,6 +125,7 @@ Implementation: Fringe is a FIFO queue
 - Space complexity: O(b^s)
 
 ### Iterative Deepening
+---
 
 Idea: get DFS's space advantage with BFS's time / shallow-solution advantages
 
@@ -133,6 +140,7 @@ Idea: get DFS's space advantage with BFS's time / shallow-solution advantages
 - Space complexity: O(bs)
 
 ### Uniform-cost search
+---
 
 Stategy: expand a cheapest node first
 
@@ -151,6 +159,14 @@ UCS also has some disadvantages:
 Explores options in every "direction", and no information about goal location.
 
 所以尽管 UCS 其实算是 Uninformed Search 算法里最好的一种了，但是有时候我们更需要 informed search 的一些特性。
+
+E.g.
+
+#### Pancake problem
+
+state space graph with costs as weights.
+
+这里的 cost 用的是从上一个状态到当前状态所需要 flip 的 pancakes 的层数， 比如2就是只只需翻转最上面两层， 3就是需要翻转上面3层，4就是整个都要翻转。
 
 
 
