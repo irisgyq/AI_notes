@@ -97,7 +97,7 @@ trees: start state is root node, children correspond to successors, same state w
 ### Depth-First Search
 ---
 
-Stratefy: expand a deepest node first.
+Strategy: expand a deepest node first.
 
 Implementation: Fringe is a LIFO stack
 
@@ -107,7 +107,13 @@ Implementation: Fringe is a LIFO stack
 
 - time complexity: O(b^m)
 
+	- 1+b+b^2+b^3+..+b^m = O(b^m)
+	
+	- b is the number of each branch, and m is the depth of goal state
+
 - space complexity: O(bm)
+
+	- Only store the branch which contains the goal state
 
 ### Breadth-First search
 ---
@@ -122,7 +128,14 @@ Implementation: Fringe is a FIFO queue
 
 - Time complexity: O(b^s)
 
+	- 1+b+b^2+b^3+..+b^s = O(b^s)
+	
+	- b is the number of each branch, and s is the depth of goal state
+
+
 - Space complexity: O(b^s)
+
+	- Need to store the whole layer
 
 ### Iterative Deepening
 ---
@@ -151,6 +164,8 @@ Implementation: Fringe is a priority queue (**priority: cumulative cost**)
 - It is optimal
 
 - Time complexity: O(b^(c*/e))
+
+	- C* is solution costs, arcs cost is at least e, then the effective depth is C*/e
 
 - Space complexity: O(b^(c*/e))
 

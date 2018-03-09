@@ -146,7 +146,7 @@ Proof:
 	
 	- n expands before B 
 
-		- f(n) <= f(A) <= f(B)
+		- f(n) <= f(A) < f(B)
 
 - All ancestors of A expand before B
 

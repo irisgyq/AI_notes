@@ -1,6 +1,8 @@
 # Constraint Satisfaction Problem I
+---
 
 ## Search
+---
 
 Assumptions about the world:
 
@@ -23,6 +25,7 @@ like: a single agent, deterministic actions, fully observed state and discrete s
 	- CSPs are specialized for identification problems
 
 ## Constraint Satisfaction Problems
+---
 
 - A special subset of search problems
 
@@ -110,6 +113,7 @@ higher-order involve 3 or more variables.
 	- Linear constraints solvable in polynomial time by LP methods
 
 ## Solving CSPs
+---
 
 ### Backtracking Search
 

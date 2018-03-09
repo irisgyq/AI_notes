@@ -1,6 +1,8 @@
 # Adversarial Search
+---
 
 ## Zero-Sum games
+---
 
 - Agent have opposite utilities (values on outcomes)
 
@@ -11,6 +13,7 @@
 Single agent use max value to be final state value, while adversarial agents use minimax.
 
 ## Minimax
+---
 
 - Deterministric, zero-sum games:
 

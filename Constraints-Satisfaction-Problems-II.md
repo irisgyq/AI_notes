@@ -1,6 +1,8 @@
 # Constraints Satisfaction Problems II
+---
 
 ## Solving CSPs
+---
 
 ### Improving Backtracking
 
